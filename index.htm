@@ -2,9 +2,6 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>
-		NyapassWorld
-	</title>
 	<style type="text/css">
 		body
 		{
@@ -20,17 +17,19 @@
 
 	</style>
 </head>
-<!---->
+<!--开始body内容-->
 <body>
-	<h1 class="marquee">
-		NyapassWorld
-	</h1>
+	<h1>NyapassWorld</h1>
 	<hr />
-	<p>
-		HI.I'm Enchanty...oh...Enchanter07.
-	</p>
-	<p style="color:#6cf">
-		My first personal site.
-	</p>
+	<p>HI.I'm Enchanty...oh...Enchanter07.</p>
+	<div style="color:#6cf">
+		<p>My first personal site.</p>
+		<p id='strange'></p>
+	</div>
+	<button onclick='random()'>click</button>
+	<script type="text/javascript">
+		function random()
+		{document.getElementById('strange').innerHTML=Math.floor(Math.random()*10000000000000001)}
+	</script>
 </body>
 </html>
