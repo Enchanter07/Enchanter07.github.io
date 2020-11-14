@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Ect07's Website</title>
+	<link rel="stylesheet" type='text/css' href='style/button_style.css'>
 	<style type="text/css">
 		body
 		{
@@ -14,13 +15,25 @@
 			font-size: 45px;
 			font-weight: normal;
 		}
+		button.laaarge
+		{
+			font-size: 20px;
+			background-color: #39c;
+		}
+		button.laaarge:hover
+		{
+			background-color: #cff;
+			color:#39c;
+		}
 		
 
 	</style>
 </head>
 <!--开始body内容-->
 <body>
-	<img src='image/Cat_logo_main-2.png' width='229' height='44' />
+	<div style='text-align: center;'>
+		<img src='image/Cat_logo_main-2.png' alt='CUTECAT' width='229' height='44' />
+	</div>
 	<hr />
 	<h1>NyapassWorld</h1>
 	<p>HI.I'm Enchanty...oh...Enchanter07.</p>
@@ -28,10 +41,19 @@
 		<p>My first personal site.</p>
 		<p id='random16'><br /></p>
 	</div>
-	<button onclick='random()'>click</button>
+	<button class='laaarge' onclick='random()'>感受混沌的魅力</button>
+	<!--以下是令人极度反感的Javascript-->
 	<script type="text/javascript">
+		var i
+		
 		function random()
-		{document.getElementById('random16').innerHTML=Math.floor(Math.random()*10000000000000001)}
+		{	
+			var looong='';
+
+			for (i=0;i<500;i++){looong+=Math.floor(Math.random()*10000000000000000)+'<br />'};
+
+			document.getElementById('random16').innerHTML= looong+"<br />That's You See!!!";
+		}
 	</script>
 </body>
 </html>
