@@ -1,30 +1,27 @@
-<!--本页面纯属开玩笑。-->
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>
-403 Forbidden
-</title>
-<style type="text/css">
-body{font-family:"times";}
-</style>
-</head>
+<meta charset="utf-8" />
 <body>
-<h1>
-403 Forbidden
-</h1>
-<hr />
-<div style="font-size:20px">
-<p>
-Yes. This page exists.
-</p>
-<p>
-I just don't let you see it.
-</p>
-<p>
-Maybe you will refute, but this is just the TRUTH.
-</p>
-</div>
+	<div id="welcome"><h2>600 Please turn-on JavaScript</h2><hr /><p>这是W3C规定的一种新型错误。从明天起就会开始实行。</p></div>
+	<script>
+	var text;
+	var i = Math.floor(Math.random() * 10);
+	switch(i){
+		case 1 :
+		text = "<h2>403 不让你访问</h2><hr /><p>鉴于阁下昨天晚上对此站进行了恶意DDoS公鸡，本站暂将您的ip列入了banlist，如果您并不知情则很有可能是您发生了失忆 。";
+		break;
+		case 2 :
+		text = "<h2>404 真的404了</h2><hr /><p>请检查拼写是否有错误。 Uduntu 21.0</p>";
+		break;
+		case 3 :
+		text = "<h2>509 超出带宽限制</h2><hr /><p>因本站最近访问量突增以至于超过200,000,000人次每天，站长需支付10亿美刀的超额费用，您可以考虑捐款到3HmYQ8VWuNaMradbdwy6kLuzXqBWFQW875以支持。</p>"
+		break;
+		default :
+		text = "<h2>502 坏 门 路</h2><hr /><p>这个页面粘性十足！您可能需要多刷新几次才行。或者您也可以等上5min再试。</p>";
+		
+	}
+	document.getElementById("welcome").innerHTML = text
+	</script>
 </body>
 </html>
