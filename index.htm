@@ -17,7 +17,6 @@
 			font-size: 30px;
 			font-family: "Georgia","Simsun";
 			background-color: #fff0ee;
-			
 		}
 		h1
 		{
@@ -34,7 +33,20 @@
 			background-color: #cff;
 			color:#39c;
 		}
-		
+		.newspart p
+		{
+			font-size: 25px;
+			font-family:'Times','SimSun';
+		}
+		.headline
+		{
+			font-weight: bold;
+		}
+		.end
+		{
+			text-align: center;
+			font-size: 10px;
+		}
 
 	</style>
 </head>
@@ -51,18 +63,20 @@
 	<h1>NyapassWorld</h1>
 	<p>HI.I'm Enchanty...oh...Enchanter07.</p>
 	<div style="color:#6cf">
-		<p>My website for JOKE.</p>
+		<p>恶 搞 无 极 限</p>
 		<p id='random16'><br /></p>
 	</div>
-	<button class='laaarge' onclick='random()'>感受混沌的魅力</button>
+	<button class='laaarge' onclick='random()' title='快点！'>感受混沌的魅力</button>
 
 
 
-	<h1>新闻</h1>
-	<p>以下是<b>如假包换</b>的新闻:</p>
-	<li>Digicert机构私钥泄漏,快禁用您的浏览器证书!<a href="news/Digicert_Legend.htm">详情..</a></li>
+	<h1 >新闻</h1>
+	<p>以下通常是<b>如假包换</b>的新闻:</p>
+	<li>Digicert机构私钥泄漏,快禁用您的浏览器证书!<a href="news/Digicelegend.htm">详情..</a></li>
+	<!--页脚-->
+	<p class='end'><a href='https://github.com/' title='别往里走，会掉进坑里，警告警告！'>全地球最大源代码抄袭平台</a></p>
 
-	<!--以下是令人极度反感的Javascript-->
+	<!--开始js内容-->
 	<script>
 		var i
 		
@@ -72,7 +86,7 @@
 
 			for (i=0;i<500;i++){looong+=Math.floor(Math.random()*10000000000000000)+'<br />'};
 
-			document.getElementById('random16').innerHTML= looong+"<br />That's You See!!!";
+			document.getElementById('random16').innerHTML= looong+"<br />You See!!!";
 		}
 	</script>
 </body>
